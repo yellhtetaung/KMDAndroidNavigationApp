@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">NavigationApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_first_name">Enter your first name</string>
+    <string name="enter_last_name">Enter your last name</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_username">Enter your username</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="clear">Clear</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="do_not_have_account">Don\'t have an account?</string>
 </resources>
