@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav_graph"
+    app:startDestination="@id/welcomeUserFragment">
+
+    <fragment
+        android:id="@+id/welcomeUserFragment"
+        android:name="com.kmd.navigationappapplication.WelcomeUserFragment"
+        android:label="fragment_welcome_user"
+        tools:layout="@layout/fragment_welcome_user">
+        <action
+            android:id="@+id/action_welcomeUserFragment_to_listVeiwFragment"
+            app:destination="@id/listVeiwFragment" />
+        <action
+            android:id="@+id/action_welcomeUserFragment_to_entryFragment"
+            app:destination="@id/entryFragment" />
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            android:defaultValue="Guest"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/listVeiwFragment"
+        android:name="com.kmd.navigationappapplication.ListViewFragment"
+        android:label="fragment_list_veiw"
+        tools:layout="@layout/fragment_list_view">
+        <action
+            android:id="@+id/action_listVeiwFragment_to_entryFragment"
+            app:destination="@id/entryFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.kmd.navigationappapplication.EntryFragment"
+        android:label="fragment_entry"
+        tools:layout="@layout/fragment_entry">
+        <action
+            android:id="@+id/action_entryFragment_to_listVeiwFragment"
+            app:destination="@id/listVeiwFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+                android:name="fitnessActivity"
+                app:argType="com.kmd.navigationappapplication.FitnessActivity" />
+    </fragment>
+</navigation>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:backgroundTint="@color/light_green"
+            app:cardElevation="8dp"
+            android:layout_marginVertical="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/txtActivityType"
+                    android:text="Running"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:id="@+id/txtActivityEntryDate"
+                    android:text="21/12/2025"
+                    android:layout_marginVertical="2dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            <TextView
+                    android:id="@+id/txtActivityDuration"
+                    android:text="10 minutes"
+                    android:layout_marginVertical="2dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_marginTop="18dp"
+                    tools:ignore="ExtraText">
+
+                <ImageButton
+                        android:id="@+id/btnDetailActivityItem"
+                        android:src="@drawable/info"
+                        android:contentDescription="Information Activity icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:tint="@color/black"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@color/white" />
+
+                <ImageButton
+                        android:id="@+id/btnEditActivityItem"
+                        android:src="@drawable/edit"
+                        android:contentDescription="Edit Activity icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:tint="@color/black"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@color/white" />Øl
+
+                <ImageButton
+                        android:id="@+id/btnDeleteActivityItem"
+                        android:src="@drawable/delete"
+                        android:contentDescription="Delete Activity icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:tint="@color/red"
+                        android:backgroundTint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

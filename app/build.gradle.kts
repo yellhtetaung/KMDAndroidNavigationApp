@@ -53,4 +53,5 @@ dependencies {
 
     implementation("androidx.navigation:navigation-fragment:2.9.6")
     implementation("androidx.navigation:navigation-ui:2.9.6")
+    implementation("com.android.volley:volley:1.2.1")
 }
