@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".EntryFragment">
 
-    <LinearLayout
+
+    <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="60dp"
-            android:orientation="vertical">
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/activity_entry"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:gravity="center"
-                android:text="@string/activity_entry"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+    <ScrollView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <LinearLayout
+                android:paddingHorizontal="16dp"
+                android:paddingBottom="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="16dp"
-                android:layout_marginTop="18dp"
                 android:orientation="vertical">
 
             <TextView
@@ -40,14 +38,10 @@
                     android:textColor="@color/black"
                     android:layout_marginBottom="8dp" />
 
-            <EditText
-                    android:id="@+id/editActivityType"
+            <Spinner
+                    android:id="@+id/spinnerActivityType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:hint="@string/enter_activity_type"
-                    android:inputType="text"
-                    android:textSize="16sp"
                     android:background="@drawable/edit_text_background" />
 
             <TextView
@@ -59,12 +53,10 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp" />
 
-            <EditText
+            <TextView
                     android:id="@+id/editEntryDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="datetime"
-                    android:autofillHints=""
                     android:hint="@string/enter_entry_date"
                     android:textSize="16sp"
                     android:background="@drawable/edit_text_background" />
@@ -135,13 +127,11 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp" />
 
-            <EditText
+            <TextView
                     android:id="@+id/editTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="datetime"
-                    android:autofillHints=""
-                    android:hint="@string/enter_time"
+                    android:text="@string/enter_time"
                     android:textSize="16sp"
                     android:background="@drawable/edit_text_background" />
 
@@ -266,5 +256,5 @@
                         android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

@@ -39,13 +39,13 @@ class LoginFragment : Fragment() {
         }
 
         binding.btnLogInLogin.setOnClickListener {
-            loginAction()
+            onLoginHandler()
         }
 
         return binding.root
     }
 
-    private fun loginAction() {
+    private fun onLoginHandler() {
         val username = binding.editLogInUsername.text.toString()
         val password = binding.editLogInPassword.text.toString()
 

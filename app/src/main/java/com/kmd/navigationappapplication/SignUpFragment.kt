@@ -44,13 +44,13 @@ class SignUpFragment : Fragment() {
         }
 
         binding.btnSignUp.setOnClickListener {
-            SignUpAction()
+            onSignUpHandler()
         }
 
         return binding.root
     }
 
-    private fun SignUpAction() {
+    private fun onSignUpHandler() {
         val firstName = binding.editFirstName.text.toString()
         val lastName = binding.editLastName.text.toString()
         val email = binding.editEmail.text.toString()
